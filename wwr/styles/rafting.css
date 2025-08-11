@@ -1,4 +1,6 @@
-/* Reset and global styles */
+/* ========================
+   Global Reset & Base
+======================== */
 * {
   margin: 0;
   padding: 0;
@@ -12,18 +14,19 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Header & Nav */
+/* ========================
+   Header & Navigation
+======================== */
 header {
   background: #004466;
   color: white;
   padding: 1rem;
 }
 
-header h1 {
+header .logo {
   text-align: center;
   font-size: 1.8rem;
   font-family: 'WindSong', cursive;
-  color: #333;
 }
 
 nav ul {
@@ -31,6 +34,7 @@ nav ul {
   justify-content: center;
   list-style: none;
   margin-top: 0.5rem;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -42,11 +46,14 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   text-decoration: underline;
 }
 
-/* Hero Section */
+/* ========================
+   Hero Section
+======================== */
 .hero {
   position: relative;
 }
@@ -65,6 +72,7 @@ nav a:hover {
   color: white;
   padding: 1rem 2rem;
   border-radius: 8px;
+  max-width: 400px;
 }
 
 .btn {
@@ -81,64 +89,149 @@ nav a:hover {
   background: #004466;
 }
 
-/* Newsletter */
+/* ========================
+   Newsletter
+======================== */
 .newsletter {
   padding: 2rem;
   background: #eee;
   text-align: center;
 }
 
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
 .newsletter input {
   padding: 0.5rem;
   width: 250px;
   max-width: 80%;
-  margin-right: 0.5rem;
 }
 
 .newsletter button {
   padding: 0.5rem 1rem;
 }
 
-/* Quote Section */
-.quote {
-  padding: 2rem;
-  text-align: center;
-  font-style: italic;
-}
-
-/* Trips Page Grid */
-.trips-grid {
+/* ========================
+   Grid Layouts
+======================== */
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   padding: 2rem;
 }
 
-.trip {
+/* Company Info (Home) */
+.company-info img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Trips Grid */
+.trips-grid .trip {
   background: white;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.trip img {
+.trips-grid img {
   width: 100%;
   border-radius: 8px;
-  height: 120px;
+  height: 150px;
   object-fit: cover;
 }
 
-/* CTA */
-.cta {
+/* ========================
+   Tables (Trips Page)
+======================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
   text-align: center;
+}
+
+th {
+  background: #006699;
+  color: white;
+}
+
+/* ========================
+   Contact Page
+======================== */
+.employees {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.employees figure {
+  text-align: center;
+  max-width: 200px;
+}
+
+.employees img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contact-form {
   padding: 2rem;
 }
 
-/* Footer */
+.contact-form form {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* ========================
+   Footer
+======================== */
 footer {
   background: #004466;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 0.3rem;
+}
+
+/* ========================
+   Responsive
+======================== */
+@media (max-width: 768px) {
+  .hero-text {
+    position: static;
+    transform: none;
+    background: #004466;
+    max-width: 100%;
+  }
 }

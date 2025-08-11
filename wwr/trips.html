@@ -5,43 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Choose from exciting rafting trips for all skill levels. Book your rafting adventure today.">
   <title>White Water Rafting | Trips</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>White Water Rafting</h1>
+    <div class="logo">White Water Rafting</div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html" class="active">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <h2>Our Adventure Trips</h2>
-    <section class="trips-grid">
+    <section class="trips-grid grid">
       <article class="trip">
-        <img src="images/rapid1.jpeg" alt="River Rush Adventure" />
+        <img src="images/trip-river-rush.jpeg" alt="River Rush Adventure">
         <h3>River Rush</h3>
         <p>A thrilling half-day ride for adrenaline seekers. Great for beginners!</p>
         <p><strong>Price:</strong> $89</p>
       </article>
       <article class="trip">
-        <img src="images/rapid2.jpeg" alt="Mountain Gorge Expedition" />
+        <img src="images/trip-mountain-gorge.jpeg" alt="Mountain Gorge Expedition">
         <h3>Mountain Gorge Expedition</h3>
         <p>A full-day challenge through stunning canyon scenery. Intermediate level.</p>
         <p><strong>Price:</strong> $129</p>
       </article>
       <article class="trip">
-        <img src="images/rapid3.jpeg" alt="Family Float Ride" />
+        <img src="images/trip-family-float.jpeg" alt="Group of people relaxing and having fun on a red inflatable raft in a calm river surrounded by green trees on a sunny day, creating a joyful and playful atmosphere">
         <h3>Family Float Ride</h3>
         <p>Easy, fun, and safe. Perfect for families with kids.</p>
         <p><strong>Price:</strong> $59</p>
       </article>
     </section>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Trip</th>
+          <th>Difficulty</th>
+          <th>Duration</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>River Rush</td><td>Easy</td><td>4 hours</td><td>$89</td></tr>
+        <tr><td>Mountain Gorge Expedition</td><td>Moderate</td><td>8 hours</td><td>$129</td></tr>
+        <tr><td>Family Float Ride</td><td>Easy</td><td>3 hours</td><td>$59</td></tr>
+      </tbody>
+    </table>
 
     <div class="cta">
       <p>Want more info or ready to book?</p>

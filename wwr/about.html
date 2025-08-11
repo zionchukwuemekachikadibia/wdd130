@@ -1,33 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="White Water Adventures About Us page with history, mission, and gallery." />
-  <meta name="author" content="Zion Chukwuemeka" />
+  <meta name="description" content="White Water Rafting About Us page with history, mission, and gallery." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=WindSong&display=swap"
-    rel="stylesheet" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/rafting.css" />
-
-  <title>About Us | White Water Adventures</title>
+  <title>About Us | White Water Rafting</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <!-- HEADER -->
   <header>
-    <img src="images/wwr-logo.png" alt="Rafting Company Logo" />
-    <h1>White Water Adventures</h1>
+    <div class="logo">White Water Rafting</div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
@@ -35,78 +21,61 @@
   </header>
 
   <main>
-    <!-- HERO SECTION -->
+    <!-- Hero -->
     <section class="hero">
-      <img src="images/hero (1).jpg" alt="Rafting Adventure Hero Image" class="hero-img" />
-      <h2>White Water Rafting</h2>
-      <div class="hero-content">
-        <p>
-          We provide safe, exciting, and unforgettable rafting experiences for adventurers of all ages. Join us to
-          conquer the rapids and connect with nature!
-        </p>
-        <img src="images/happy-client (1).jpg" alt="Happy Client" />
+      <img src="images/hero-about.jpg" alt="Rafting team celebrating on river">
+      <div class="hero-text">
+        <h2>White Water Rafting</h2>
+        <p>Safe, exciting, and unforgettable rafting adventures for all ages.</p>
       </div>
     </section>
 
-    <!-- HISTORY SECTION -->
-    <section class="history">
-      <h2>History</h2>
-      <div class="history-content">
-        <p>
-          Founded in 1998, we started with two rafts and a dream. Over 25 years later, we are a leading provider of
-          white water adventures in the region.
-        </p>
-        <img src="images/history.jpg" alt="Rafting History">
-        <p>
-          With expert guides and a passion for safety and fun, we've built a loyal base of thrill-seekers who return
-          year after year for new challenges.
-        </p>
+    <!-- History -->
+    <section class="history grid">
+      <div>
+        <p>Founded in 1998, we started with two rafts and a dream. Over 25 years later, we are a leading provider of white water adventures in the region.</p>
+        <p>With expert guides and a passion for safety and fun, we welcome thrill-seekers year after year for new challenges.</p>
+      </div>
+      <div>
+        <img src="images/history.jpg" alt="Vintage rafting trip photo">
       </div>
     </section>
 
-    <!-- ADVENTURE GALLERY SECTION -->
+    <!-- Gallery -->
     <section class="adventure">
       <h2>Adventure Awaits You!</h2>
-      <div class="adventure-gallery">
+      <div class="grid">
         <figure>
-          <img src="images/raft1 (1).jpg" alt="Los Dientes del Diablo" />
+          <img src="images/raft-los-dientes.jpg" alt="Los Dientes del Diablo rapids">
           <figcaption>Los Dientes del Diablo</figcaption>
         </figure>
         <figure>
-          <img src="images/raft2 (1).jpg" alt="Big Mallard" />
+          <img src="images/raft-big-mallard.jpg" alt="Big Mallard rapids">
           <figcaption>Big Mallard</figcaption>
         </figure>
         <figure>
-          <img src="images/raft3 (1).jpg" alt="Half Day Adventure" />
+          <img src="images/raft-half-day.jpg" alt="Half Day Adventure trip">
           <figcaption>Half Day Adventure</figcaption>
         </figure>
         <figure>
-          <img src="images/raft4 (1).jpg" alt="Rapid Rush" />
+          <img src="images/raft-rapid-rush.jpg" alt="Rapid Rush ride">
           <figcaption>Rapid Rush</figcaption>
         </figure>
         <figure>
-          <img src="images/raft5 (1).jpg" alt="Twilight Rapids" />
+          <img src="images/raft-twilight.jpg" alt="Twilight Rapids at sunset">
           <figcaption>Twilight Rapids</figcaption>
         </figure>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 White Water Adventures | Zion Chukwuemeka</p>
+    <p>&copy; 2025 White Water Rafting | All rights reserved.</p>
     <div class="social-icons">
-      <a href="https://facebook.com">
-        <img src="images/facebook (1).svg" alt="Facebook" />
-      </a>
-      <a href="https://twitter.com">
-        <img src="images/twitter.svg" alt="Twitter" />
-      </a>
-      <a href="https://instagram.com">
-        <img src="images/instagram.svg" alt="Instagram" />
-      </a>
+      <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
     </div>
   </footer>
 </body>
-
 </html>
